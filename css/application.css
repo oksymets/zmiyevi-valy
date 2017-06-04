@@ -240,14 +240,6 @@ p span {
 .animation h2 {
   color: #fff; }
 
-.nav-btn {
-  float: left;
-  margin-left: 15px;
-  font-size: 1.2em;
-  font-style: uppercase;
-  background-color: #rgba 255, 255, 255, 0.5;
-  padding: 3px; }
-
 .quote {
   margin-top: 1em;
   margin-bottom: 1em;
@@ -277,24 +269,8 @@ p span {
 .directSpeach {
   font-style: italic; }
 
-h2.disclaimer {
-  margin-top: 10em;
-  font-size: 2em;
-  font-weight: 600;
-  border-top: 3px solid #383e47;
-  padding-top: 0.5em;
-  width: 40%; }
-  @media (max-width: 667px) {
-    h2.disclaimer {
-      margin-top: 5em;
-      width: 100%; } }
-
 .new-section {
   margin-top: 5%; }
-
-.no-padding {
-  padding-left: 0px;
-  padding-right: 0px; }
 
 .mobile {
   display: none; }
@@ -311,7 +287,10 @@ h2.disclaimer {
 .read-more {
   margin-bottom: 15px; }
 
-th, td {
-  font-size: 12px; }
+.IIV::-webkit-media-controls-play-button,
+.IIV::-webkit-media-controls-start-playback-button {
+  opacity: 0;
+  pointer-events: none;
+  width: 5px; }
 
 /*# sourceMappingURL=application.css.map */

@@ -237,7 +237,6 @@
 <div class="new-section container">
     <div class="col-xl-8 col-xl-offset-2 col-sm-6 col-sm-offset-3 col-xs-12">
         <h2 class="end-animation">Протослов’янська цивілізація</h2>
-
         <p>Як&nbsp;показали подальші дослідження (зокрема, археолога Михайла Кучері), похибки радіовуглецевого методу можуть становити століття. Отже, неможливо достеменно знати&nbsp;що, скажімо, один вал будувався проти готів, а&nbsp;інший&nbsp;&mdash; проти аварів. Науково доведено лише&nbsp;те, що&nbsp;окремі ділянки валів входять у&nbsp;систему скіфських городищ і&nbsp;датовані VII&ndash;V століттями до&nbsp;н.&nbsp;е., а&nbsp;окремі будувалися або перебудовувались за&nbsp;часів Київської Русі, аж&nbsp;до&nbsp;XI&nbsp;століття. Проте коли саме планувалась та&nbsp;створювалась загальна система цих фортифікаційних споруд, і&nbsp;досі належить більш до&nbsp;царини історичних теорій та&nbsp;гіпотез, ніж до&nbsp;доведених фактів.</p>
 
         <p class="quote">Коли саме планувалась та&nbsp;створювалась загальна система цих фортифікаційних споруд, і&nbsp;досі точно не&nbsp;відомо</p>
@@ -344,8 +343,6 @@
         Мов сирота між полинами.<br>
         Стою, допоки Всесвіт не погас, —<br>
         Праправнук і прапрадід водночас.</i></p>
-
-
     </div>
 </div>
 
@@ -435,6 +432,7 @@
 <script src="js/jquery-2.1.4.min.js" type="text/javascript"></script>
 <script src="js/jquery.waypoints.min.js" type="text/javascript"></script>
 <script src="js/bootstrap.min.js" type="text/javascript"></script>
+<script src="js/iphone-inline-video.min.js" type="text/javascript"></script>
 <script src="js/graphs.js"></script>
 <script src="js/video-animation.js" type="text/javascript"></script>
 <script src="js/share-behavior.js"></script>
@@ -448,10 +446,18 @@ $( window ).scroll(function() {
         $(".logo").css('display', 'block');
     }
 });
+
+
+// mobile video
+var videos = document.querySelector('video');
+
+$('video').each(function () {
+    enableInlineVideo(this);
+ });
+
 </script>
 
 <script type="text/javascript">
-
 
     var _gaq = _gaq || [];
     _gaq.push(['_setAccount', 'UA-18136548-1']);
