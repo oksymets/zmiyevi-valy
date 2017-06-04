@@ -82,7 +82,7 @@
     <div class="credits">Над проектом працювали: <span>Дмитро Фіонік</span>, <span>Анатолій Король</span>, <span>Ярина Серкез</span></div> 
 </div>
 
-<div class="new-section container">
+<div class="container first-paragraph">
     <div class="col-xl-8 col-xl-offset-2 col-sm-6 col-sm-offset-3 col-xs-12" style="margin-top:70%;">
     <p>Понад сто років тому козак Борзнянської сотні Сільвестр Бугай спробував побудувати у&nbsp;своїй клуні вічний двигун. Його син усе життя намагався довести теорему Ферма. Онук досі розгадує таїну Великого вибуху. Вічний двигун досі не&nbsp;вигаданий, теорему Ферма довела інша людина, а&nbsp;таїна Великого вибуху, ймовірно, так і&nbsp;залишиться таїною. Натомість Всесвіт відкрив родині Бугаїв деякі інші загадки.</p>
 
@@ -449,11 +449,63 @@ $( window ).scroll(function() {
 
 
 // mobile video
-var videos = document.querySelector('video');
+// var videos = document.querySelector('video');
 
-$('video').each(function () {
-    enableInlineVideo(this);
- });
+// $('video').each(function () {
+//     enableInlineVideo(this);
+//  });
+
+var videos = document.querySelectorAll('video');
+
+// debug events
+function debugEvents(video) {
+    [
+        'loadstart',
+        'progress',
+        'suspend',
+        'abort',
+        'error',
+        'emptied',
+        'stalled',
+        'loadedmetadata',
+        'loadeddata',
+        'canplay',
+        'canplaythrough',
+        'playing', // fake event
+        'waiting',
+        'seeking',
+        'seeked',
+        'ended',
+    // 'durationchange',
+        'timeupdate',
+        'play', // fake event
+        'pause', // fake event
+    // 'ratechange',
+    // 'resize',
+    // 'volumechange',
+        'webkitbeginfullscreen',
+        'webkitendfullscreen',
+    ].forEach(function (event) {
+        video.addEventListener(event, function () {
+            console.info('@', event);
+        });
+    });
+}
+
+function enableVideos(everywhere) {
+    for (var i = 0; i < videos.length; i++) {
+        window.enableInlineVideo(videos[i], {everywhere: everywhere});
+        debugEvents(videos[i]);
+    }
+}
+
+
+enableVideos();
+
+
+
+
+
 
 </script>
 

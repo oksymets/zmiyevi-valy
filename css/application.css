@@ -153,7 +153,12 @@ h1 {
       margin-top: 10%; } }
   @media (max-width: 1024px) {
     .header {
-      margin-top: 30%; } }
+      margin-top: 30%;
+      width: 75%; } }
+
+@media (max-width: 1024px) {
+  .first-paragraph {
+    margin-top: 120%; } }
 
 .video-events-con {
   opacity: 1;

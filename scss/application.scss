@@ -47,9 +47,16 @@ h1 {
   }
   @media #{$brk-narrow} {
     margin-top: 30%;
+    width: 75%;
   }
 }
 
+
+.first-paragraph {
+  @media #{$brk-narrow} {
+    margin-top:120%;
+  }
+}
 
 .video-events-con {
   opacity: 1;
