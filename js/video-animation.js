@@ -26,7 +26,7 @@ $('.credits').waypoint(function(direction) {
     video[0].pause();
     if (direction === 'up') {
         $(".video-events-con").animate({ opacity: 1 }, 100 );
-        video.attr("src", "video/bg-dark.mp4");
+        video.attr("src", "video/starting-valy.mp4");
         video.prop('loop', true);
         video[0].load();
         video[0].play();
@@ -146,4 +146,4 @@ $('.end-animation').waypoint(function(direction) {
         video[0].currentTime = 93;
     }
 
-},{ offset: 400 });
+},{ offset: 600 });
