@@ -26,11 +26,31 @@ h1 {
   font-size: 4em;
   line-height: 1.3em;
   font-weight: bold; }
+  @media (max-width: 1920px) {
+    h1 {
+      font-size: 4.7em; } }
+  @media (max-width: 1440px) {
+    h1 {
+      font-size: 5em; } }
+  @media (max-width: 1285px) {
+    h1 {
+      font-size: 4em; } }
 
 h2 {
   font-size: 2em;
   line-height: 1.7em;
   font-weight: bold; }
+  @media (max-width: 1920px) {
+    h2 {
+      font-size: 2.7em; } }
+  @media (max-width: 1440px) {
+    h2 {
+      font-size: 3em; } }
+  @media (max-width: 1285px) {
+    h2 {
+      font-size: 2em;
+      line-height: 1.7em;
+      font-weight: bold; } }
 
 h3 {
   font-size: 1.6em;
@@ -127,9 +147,17 @@ h1 {
       font-size: 2.5em; } }
 
 .subtitle {
-  font-size: 2em;
   line-height: 1.5em;
   font-weight: 300; }
+  @media (max-width: 1920px) {
+    .subtitle {
+      font-size: 2.7em; } }
+  @media (max-width: 1440px) {
+    .subtitle {
+      font-size: 3em; } }
+  @media (max-width: 1285px) {
+    .subtitle {
+      font-size: 2em; } }
 
 .header {
   position: absolute;
@@ -138,27 +166,13 @@ h1 {
   right: 0;
   margin-left: auto;
   margin-right: auto;
-  margin-top: 10%;
+  margin-top: 25vh;
   width: 45%;
   text-align: center;
   color: #FFF; }
-  @media (max-width: 1920px) {
-    .header {
-      margin-top: 15%; } }
-  @media (max-width: 1440px) {
-    .header {
-      margin-top: 10%; } }
-  @media (max-width: 1285px) {
-    .header {
-      margin-top: 10%; } }
-  @media (max-width: 1024px) {
-    .header {
-      margin-top: 30%;
-      width: 75%; } }
 
-@media (max-width: 1024px) {
-  .first-paragraph {
-    margin-top: 120%; } }
+.first-paragraph {
+  margin-top: 130vh; }
 
 .video-events-con {
   opacity: 1;
@@ -202,7 +216,6 @@ video {
   color: #fff; }
 
 .credits {
-  font-size: 1.4em;
   line-height: 1.5em;
   font-weight: 300; }
   .credits span {
@@ -211,6 +224,15 @@ video {
     margin-top: 1em;
     font-size: 1.1em;
     font-weight: 300; }
+  @media (max-width: 1920px) {
+    .credits {
+      font-size: 2em; } }
+  @media (max-width: 1440px) {
+    .credits {
+      font-size: 1.7em; } }
+  @media (max-width: 1285px) {
+    .credits {
+      font-size: 1.4em; } }
 
 p.first {
   margin-top: 3.5em; }
@@ -237,15 +259,31 @@ p.parallax-note {
 p span {
   background: rgba(221, 197, 188, 0.5);
   padding: 1px; }
+@media (max-width: 1920px) {
+  p {
+    font-size: 2.3em; } }
+@media (max-width: 1440px) {
+  p {
+    font-size: 2em; } }
+@media (max-width: 1285px) {
+  p {
+    font-size: 1.6em; } }
 
 .animation-explainer p {
   color: #fff;
-  margin-bottom: 230%; }
+  margin-bottom: 100vh; }
 
 .animation-explainer span {
-  font-size: 1.3em;
-  background: rgba(221, 197, 188, 0.5);
-  padding: 1px; }
+  background: rgba(221, 197, 188, 0.5); }
+  @media (max-width: 1920px) {
+    .animation-explainer span {
+      font-size: 2em; } }
+  @media (max-width: 1440px) {
+    .animation-explainer span {
+      font-size: 1.7em; } }
+  @media (max-width: 1285px) {
+    .animation-explainer span {
+      font-size: 1.3em; } }
 
 .animation h2 {
   color: #fff; }
@@ -253,7 +291,7 @@ p span {
 .quote {
   margin-top: 1em;
   margin-bottom: 1em;
-  font-size: 2.3em;
+  font-size: 4vh;
   font-family: 'Open Sans Condensed', sans-serif;
   color: #B78979; }
   .quote::before {

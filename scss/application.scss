@@ -19,9 +19,17 @@ h1 {
 }
 
 .subtitle {
-	font-size: 2em;
-    line-height: 1.5em;
-    font-weight: 300;
+  line-height: 1.5em;
+  font-weight: 300;
+  @media #{$brk-xlarge} {
+    font-size:2.7em;
+  }
+  @media #{$brk-large} {
+    font-size:3em;
+  }
+  @media #{$brk-medium} {
+    font-size: 2em;
+  }
 }
 
 
@@ -32,30 +40,15 @@ h1 {
   right: 0;
   margin-left: auto;
   margin-right: auto;
-  margin-top: 10%;
+  margin-top: 25vh;
   width: 45%;
   text-align: center;
   color:#FFF;
-  @media #{$brk-xlarge} {
-    margin-top: 15%;
-  }
-  @media #{$brk-large} {
-    margin-top: 10%;
-  }
-  @media #{$brk-medium} {
-    margin-top: 10%;
-  }
-  @media #{$brk-narrow} {
-    margin-top: 30%;
-    width: 75%;
-  }
 }
 
 
 .first-paragraph {
-  @media #{$brk-narrow} {
-    margin-top:120%;
-  }
+    margin-top:130vh;
 }
 
 .video-events-con {
@@ -110,7 +103,6 @@ video {
 
 
 .credits {
-  font-size: 1.4em;
   line-height: 1.5em;
   font-weight:300;
   & span {
@@ -120,6 +112,15 @@ video {
     margin-top:1em;
     font-size:1.1em;
     font-weight:300;
+  }
+   @media #{$brk-xlarge} {
+    font-size:2em;
+  }
+  @media #{$brk-large} {
+    font-size:1.7em;
+  }
+  @media #{$brk-medium} {
+    font-size: 1.4em;
   }
 }
 
@@ -149,18 +150,34 @@ p {
     background: rgba(221,197,188, 0.5);
     padding: 1px;
   }
+  @media #{$brk-xlarge} {
+    font-size:2.3em;
+  }
+  @media #{$brk-large} {
+    font-size:2em;
+  }
+  @media #{$brk-medium} {
+    font-size: 1.6em;
+  }
 }
 
 
 .animation-explainer p {
   color:#fff;
-  margin-bottom: 230%;
+  margin-bottom: 100vh;
 }
 
 .animation-explainer span {
-    font-size: 1.3em;
     background: rgba(221,197,188, 0.5);
-    padding: 1px;
+    @media #{$brk-xlarge} {
+    font-size:2em;
+    }
+    @media #{$brk-large} {
+      font-size:1.7em;
+    }
+    @media #{$brk-medium} {
+      font-size: 1.3em;
+  }
   }
 
 
@@ -171,7 +188,7 @@ p {
 .quote {
   margin-top:1em;
   margin-bottom:1em;
-  font-size: 2.3em;
+  font-size: 4vh;
   font-family: 'Open Sans Condensed', sans-serif;
   color: #B78979;
   &::before {

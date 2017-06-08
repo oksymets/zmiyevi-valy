@@ -31,7 +31,7 @@ $('.credits').waypoint(function(direction) {
         video[0].load();
         video[0].play();
     }
-},{ offset: 50 });
+},{ offset: '30%' });
 
 
 //fade-in animation
@@ -54,7 +54,7 @@ $('.start-animation').waypoint(function(direction) {
         $("#pereyaslav").animate({ opacity: 0 }, 100 );
     }
 
-},{ offset: 250 });
+},{ offset: '95%' });
 
 
 
@@ -68,7 +68,7 @@ $('#pereyaslav-details').waypoint(function(direction) {
         video[0].currentTime = 0;
     }
 
-},{ offset: 250 });
+},{ offset: "70%" });
 
 
 
@@ -86,7 +86,7 @@ $('#kruglyk-intro').waypoint(function(direction) {
         video[0].currentTime = 4;
     }
 
-},{ offset: 250 });
+},{ offset: "70%" });
 
 
 
@@ -100,7 +100,7 @@ $('#kruglyk-details').waypoint(function(direction) {
         video[0].currentTime = 26;
     }
 
-},{ offset: 250 });
+},{ offset: "70%" });
 
 
 
@@ -119,7 +119,7 @@ $('#khodosivka-intro').waypoint(function(direction) {
     }
 
 
-},{ offset: 250 });
+},{ offset: "70%" });
 
 
 $('#khodosivka-details').waypoint(function(direction) {
@@ -132,7 +132,7 @@ $('#khodosivka-details').waypoint(function(direction) {
         video[0].currentTime = 82;
     } 
 
-},{ offset: 250 });
+},{ offset: "70%" });
 
 
 
@@ -146,4 +146,4 @@ $('.end-animation').waypoint(function(direction) {
         video[0].currentTime = 93;
     }
 
-},{ offset: 600 });
+},{ offset: "95%" });
