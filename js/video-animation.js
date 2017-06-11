@@ -19,11 +19,13 @@ function playVideoFromTo(startTime, endTime) {
 
 //starting video 
 $('.credits').waypoint(function(direction) {
-    $(".video-events-con").animate({ opacity: 0 }, 100 );
-    video.attr("src", "video/valy1500.mp4");
-    video.prop('loop', false);
-    video[0].load();
-    video[0].pause();
+    if (direction === "down") {
+        $(".video-events-con").animate({ opacity: 0 }, 100 );
+        video.attr("src", "video/valy1500.mp4");
+        video.prop('loop', false);
+        video[0].load();
+        video[0].pause();
+    }
     if (direction === 'up') {
         $(".video-events-con").animate({ opacity: 1 }, 100 );
         video.attr("src", "video/starting-valy.mp4");
