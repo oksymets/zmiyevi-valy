@@ -166,7 +166,7 @@ h1 {
   right: 0;
   margin-left: auto;
   margin-right: auto;
-  margin-top: 25vh;
+  margin-top: 15vh;
   text-align: center;
   color: #FFF; }
   @media (max-width: 1920px) {
@@ -311,7 +311,10 @@ p span {
         font-size: 7em; } }
 
 .disclaimer {
-  font-size: 1.3em; }
+  font-size: 1.3em;
+  color: #eee;
+  margin-top: 40px;
+  margin-left: 15px; }
 
 .sources {
   color: #BBC0BF;

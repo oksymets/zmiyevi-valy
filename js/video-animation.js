@@ -18,7 +18,7 @@ function playVideoFromTo(startTime, endTime) {
 
 
 //starting video 
-$('.credits').waypoint(function(direction) {
+$('.cover-animation').waypoint(function(direction) {
     if (direction === "down") {
         $(".video-events-con").animate({ opacity: 0 }, 100 );
         video.attr("src", "video/valy1500.mp4");
